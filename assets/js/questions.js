@@ -6,8 +6,6 @@
 var questionTitle = document.querySelector("#question-title");
 var questionChoices = document.querySelector('#choices');
 
-
-
 var questions = [
   {
     question: "What is a string in javascript?",
@@ -63,16 +61,16 @@ var questions = [
 
 ]
 
-let currentQuestion = 0;
+  // for (var o in questions) {
+  //    questionTitle.innerHTML = questions[o].question
+  //    questions[o].answers.forEach(ans => {
+  //       let qst = document.createElement("li");
+  //       qst.innerHTML = ans;
+  //       questionChoices.append(qst);
+  //    })
+  // }
 
-function renderQuestions(){
-    questionTitle.innerHTML = "";
-    questionChoices.innerHTML = "";
 
-    for (let r = 0; r < questions.length; r++){
-        console.log(questions[r]);
-}
-}
 // function renderTodos() {
 //     // Clear todoList element and update todoCountSpan
 //     todoList.innerHTML = "";
